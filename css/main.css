@@ -1,0 +1,57 @@
+
+
+.pokemon-title{
+  font-size: 130px;
+  line-height: 70px;
+  font-family: 'Shalimar', cursive;
+}
+
+.input-group{
+  max-width: 600px;
+}
+
+.sort-select,.select-weaknesses{
+  width: 300px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+.list-unstyled{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.card-title{
+  width: 100%;
+  margin: 0;
+  padding: 16px 0;
+  color: darkslategrey;
+  background-color: #7fffd480;
+  text-transform: capitalize;
+}
+
+.card-img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius:none;
+}
+
+
+.item-desc{
+  margin-bottom: 0;
+  padding: 16px 0;
+  background-color:rgb(229, 95, 196);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Shalimar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="bg-info">
+
+  <main class="site-main">
+    <section class="pokemon pt-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="pokemon-title">Pokemons</h2>
+        </div>
+        <form class="js-form" method="post">
+            <div class="row">
+              <div class="col-12 col-md-4 d-flex">
+                <select class="sort-select me-2 mb-2 mb-md-0" name="sort_select" >
+                  <option value="a-z">A-Z</option>
+                  <option value="z-a">Z-A</option>
+                  <option value="high-weight">High-weight</option>
+                  <option value="low-weight">Low-weight</option>
+                </select>
+                <select class="select-weaknesses mb-2 mb-md-0" name="select_weakness">
+                  <option value="All">ALL</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-4 mb-2 mb-md-0 d-flex ">
+                <input class="from-candy form-control me-2" type="number" placeholder="From...">
+                <input class="to-candy form-control" type="number" placeholder="To...">
+              </div>
+              <div class="col-12 col-md-4 d-flex">
+                <input class="form-control js-search-input me-2"  type="text" placeholder="Search pokemon" >
+                <button class="btn btn-success" type="submit">Search</button>
+              </div>
+            </div>
+
+        </form>
+        <div class="box my-3">
+          <ul class="list-unstyled js-pokemon-list">
+
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template class="template">
+    <li class="card-item position-relative me-4 mb-5 text-center">
+      <h3 class="card-title"></h3>
+      <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-pill num"></span>
+      <img class="card-img d-block" src="" alt="">
+      <p class="bg-gradient bg-primary bg-opacity-50 mb-0 py-1">
+        <span class="candy-count"></span>
+      </p>
+      <p class="weight bg-danger bg-opacity-50 mb-0"></p>
+      <div class="position-relative">
+        <time class="position-absolute tpo-0 start-100 translate-middle badge bg-warning rounded-pill time"  id="time"></time>
+        <p class="item-desc">
+        </p>
+      </div>
+    </li>
+  </template>
+
+
+  <script src="./js/pokemon.js"></script>
+  <script src="./js/main.js"></script>
+  <!-- <script src="./poke.js"></script> -->
+
+</body>
+</html>
